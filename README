@@ -5,7 +5,7 @@ Example:
 require 'adconnect'
 
 Adconnect::ActiveDirectoryUser.server = "localhost"
-Adconnect::ActiveDirectoryUser.port = "329"
+Adconnect::ActiveDirectoryUser.port = "389"
 Adconnect::ActiveDirectoryUser.base = "DC=example,DC=com"
 Adconnect::ActiveDirectoryUser.domain = "example.com"
 
