@@ -1,0 +1,15 @@
+Adconnect is a bare-bones gem for authenticating to an Active Directory server.
+
+Example:
+
+require 'adconnect'
+
+Adconnect::ActiveDirectoryUser.server = "localhost"
+Adconnect::ActiveDirectoryUser.port = "329"
+Adconnect::ActiveDirectoryUser.base = "DC=example,DC=com"
+Adconnect::ActiveDirectoryUser.domain = "example.com"
+
+user = Adconnect::ActiveDirectoryUser.authenticate('myusername','mypassword')
+
+user.cn
+=> ["firstname lastname"]
